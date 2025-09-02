@@ -1,67 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <style>
+      body {
+        background-color: rgb(72, 185, 11);
+      }
+      div {
+        background-color: green;
+      }
+      li {
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
     <div>
+      <header>
         <h1>Esercizio HTML Form</h1>
 
-        <form action="mailto:prova@gmail.com">
+        <img
+          src="../img/png-clipart-soul-eater-logo-soul-eater-logo.png"
+          width="100px"
+          height="auto"
+          alt="logo"
+          id="logo"
+        />
 
-            <label><em>Nome</em></label><br>
-            <input type="text" required placeholder="mario" minlength="3" ><br>
+        <nav>
+          <ul>
+            <li>
+              <a href="https://www.wikipedia.com" target="_blank" rel="noopener"
+                >wikipedia</a
+              >
+            </li>
+            <li>
+              <a href="https://www.google.com" target="_blank" rel="noopener"
+                >google</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/BilardoMauro02"
+                target="_blank"
+                rel="noopener"
+                >gitHub</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-            <label><em>Cognome</em></label><br>
-            <input type="text" required placeholder="rossi" minlength="5"><br>
+      <main>
+        <section id="Article">
+          <article>
+            <h2>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+              illo tenetur culpa minima assumenda? Cum recusandae id minus
+              aliquid a similique, reprehenderit cupiditate tempore tempora
+              minima sunt nemo ut quaerat!
+            </h2>
+          </article>
+        </section>
 
-            <label><u>Email</u></label><br>
-            <input type="email" required placeholder="nome@gmail.com"><br>
+        <section id="Calendario">
+          <table align="right">
+            <thead>
+              <tr>
+                <th>Lunedì</th>
+                <th>Martedì</th>
+                <th>Mercoledì</th>
+                <th>Giovedì</th>
+                <th>Venerdi</th>
+                <th>Sabato</th>
+                <th>Domenica</th>
+              </tr>
+            </thead>
+            <tbody align="center">
+              <td>Organico</td>
+              <td>Vetro</td>
+              <td>Indifferenziato</td>
+              <td>Plastica e Metalli</td>
+              <td>Organico</td>
+              <td>Indifferenziato</td>
+              <td>Nessuna raccolta</td>
+            </tbody>
+          </table>
+        </section>
 
-            <label><b>Testo</b></label><br>
-            <textarea required placeholder="inserisci un testo" maxlength="200"></textarea><br>
+        <section id="UserForm">
+          <form action="mailto:prova@gmail.com">
+            <label><em>Nome</em></label
+            ><br />
+            <input
+              type="text"
+              required
+              placeholder="mario"
+              minlength="3"
+            /><br />
+
+            <label><em>Cognome</em></label
+            ><br />
+            <input
+              type="text"
+              required
+              placeholder="rossi"
+              minlength="5"
+            /><br />
+
+            <label><u>Email</u></label
+            ><br />
+            <input type="email" required placeholder="nome@gmail.com" /><br />
+
+            <label><b>Testo</b></label
+            ><br />
+            <textarea
+              required
+              placeholder="inserisci un testo"
+              maxlength="200"
+            ></textarea
+            ><br />
 
             <select name="country" id="country-select" required>
+              <!-- serve come opzione di partenza non selezionabile in una select -->
+              <option selected hidden dise>seleziona un paese</option>
 
-                <!-- serve come opzione di partenza non selezionabile in una select -->
-                <option selected hidden dise >seleziona un paese</option>                
-                
-                <optgroup label="Europa">
-                    <option value="IT">Italia</option>
-                    <option value="FR">Francia</option>
-                    <option value="DE">Germania</option>
-                    <option value="ES">Spagna</option>
-                    <option value="PT">Portogallo</option>
-                </optgroup>
+              <optgroup label="Europa">
+                <option value="IT">Italia</option>
+                <option value="FR">Francia</option>
+                <option value="DE">Germania</option>
+                <option value="ES">Spagna</option>
+                <option value="PT">Portogallo</option>
+              </optgroup>
 
-                <optgroup label="America">
-                    <option value="US">Stati Uniti</option>
-                    <option value="CA">Canada</option>
-                    <option value="MX">Messico</option>
-                </optgroup>
+              <optgroup label="America">
+                <option value="US">Stati Uniti</option>
+                <option value="CA">Canada</option>
+                <option value="MX">Messico</option>
+              </optgroup>
 
-                <optgroup label="Africa">
-                    <option value="NG">Nigeria</option>
-                    <option value="EG">Egitto</option>
-                    <option value="ZA">Sudafrica</option>
-                    <option value="MA">Marocco</option>
-                </optgroup>
+              <optgroup label="Africa">
+                <option value="NG">Nigeria</option>
+                <option value="EG">Egitto</option>
+                <option value="ZA">Sudafrica</option>
+                <option value="MA">Marocco</option>
+              </optgroup>
 
-                <optgroup label="Asia">
-                    <option value="CN">Cina</option>
-                    <option value="IN">India</option>
-                    <option value="JP">Giappone</option>
-                    <option value="ID">Indonesia</option>
-                </optgroup>
-                
+              <optgroup label="Asia">
+                <option value="CN">Cina</option>
+                <option value="IN">India</option>
+                <option value="JP">Giappone</option>
+                <option value="ID">Indonesia</option>
+              </optgroup>
             </select>
 
-            <br><br><br>
+            <details>
+              <summary>mostra dettagli</summary>
+              <cite> sun tzu - l'arte del commit </cite>
+            </details>
+
+            <br />
 
             <button type="submit">Invia</button>
-        </form>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <address>
+          Sito creato da 0 by me<br />
+          Email: <a href="mailto:prova@gmail.com">prova@gamil.com</a><br />
+          Via delle Rose, 12<br />
+          70042 Gela (CL), Italia
+        </address>
+      </footer>
     </div>
-</body>
+  </body>
+
+  <p>per qualsiasi problema di vista causato dal sito non contattarmi</p>
 </html>
